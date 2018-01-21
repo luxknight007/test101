@@ -1,0 +1,20 @@
+package test;
+
+public class CyclicRotation {
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.err.println(solution(new int[] {3,8,9,7,6}, 3));
+	}
+	
+	public static int solution(int[] A, int K) {
+		System.err.println(A);
+		
+		for(int l = 0; l < K; l++) {
+			int[] copy = A;
+		}
+		return 0;
+	}
+
+}

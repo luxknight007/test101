@@ -1,0 +1,48 @@
+package test;
+
+public class OddOccurrencesInArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.err.println(oddOccurance(new int[42]));
+		System.err.println(solution(new int[] { 9, 3, 9, 3, 9, 7, 9 }));
+		System.err.println(test());
+	}
+	
+	public static int oddOccurance (int[] A) {
+		int initial = 3;
+		for(int a = 0; a < A.length; a++) {
+			if (a % 2 == 0) {
+				A[a] = 9;
+			} else {
+				if (a == initial) {
+					initial = (initial * 2) + 1;
+				}
+				
+				A[a] = initial;
+			}
+		}
+		
+		return initial;
+	}
+	
+	public static int solution(int[] A) {
+		// write your code in Java SE 8
+		int elem = 0;
+
+		for (int i = 0; i < A.length; i++) {
+			elem ^= A[i];
+			System.err.println(i + "======== " +elem +" ========= "+ A[i] );
+		}
+		return elem;
+	}
+	
+	public static int test() {
+		int i = 0;
+		int b = 9;
+		
+		i ^= b;
+		System.err.println(i);
+	}
+
+}

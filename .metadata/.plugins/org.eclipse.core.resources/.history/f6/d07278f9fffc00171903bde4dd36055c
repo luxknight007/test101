@@ -1,0 +1,17 @@
+package test;
+
+import java.math.BigDecimal;
+
+public class FrogJmp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.err.println(solution(10, 85, 30));
+	}
+	
+	public static int solution (int X, int Y, int D) {
+		double sum = (Y - X) / D;
+		//int jump = (int) sum.setScale(2, BigDecimal.ROUND_HALF_UP); 
+		return 0;
+	}
+}

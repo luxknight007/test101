@@ -1,0 +1,15 @@
+package test;
+
+public class FrogJmp {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.err.println(solution(10, 85, 30));
+	}
+	
+	public static int solution (int X, int Y, int D) {
+		int jump = (Y - X) / D;
+		System.err.println(jump);
+		return jump;
+	}
+}

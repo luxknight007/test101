@@ -1,0 +1,54 @@
+package test;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+public class MissingOne {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(solution(new int[] {1, 2, 3}));
+	}
+	
+	public static int solution(int[] A) {
+		Arrays.sort(A);
+		//int size = A.length;
+		
+		int missing = -1;
+		
+		Set<Integer> set = new HashSet<Integer>();
+		for (int num : A) {
+			set.add(num);
+		}
+		
+		List<Integer> list = new ArrayList<Integer>(set);
+		int limit = list.size();
+		for (int i = 0; i < limit; i++) {
+			System.err.println("missing " + list.get(i) + " ======= " + (i+1));
+			if (list.get(i) != (i+1) && ) {
+				missing = (i+1);
+			}
+			
+			/*if (missing > 0) {
+				return missing;
+			} else {
+				return 0;
+			}*/
+			/*for (int l = 0; l < size; l++) {
+				if (l >= 1 && list.get(i) == l) {
+					//missing = (l % 2 > 0) ? l : l + 1;
+					System.err.println("missing " + list.get(i) + " ======= " + l);
+				} 			}
+			
+			if (missing > 0) {
+				return missing;
+			} else {
+				return 0;
+			}*/
+		}
+		return missing;
+	}
+}

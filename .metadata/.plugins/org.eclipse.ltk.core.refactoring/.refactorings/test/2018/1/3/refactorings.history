@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;test.codility1&apos; to &apos;Binarygap&apos;&#x0A;- Original project: &apos;test&apos;&#x0A;- Original element: &apos;test.codility1&apos;&#x0A;- Renamed element: &apos;test.Binarygap&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;codility1&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;test{codility1.java[codility1" matchStrategy="1" name="Binarygap" qualified="false" references="true" similarDeclarations="false" stamp="1516326205410" textual="false" version="1.0"/>
+</session>

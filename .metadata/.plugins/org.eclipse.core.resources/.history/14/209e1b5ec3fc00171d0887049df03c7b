@@ -1,0 +1,27 @@
+package test;
+
+public class OddOccurrencesInArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.err.println(oddOccurance(new int[8]));
+	}
+	
+	public static int oddOccurance (int[] A) {
+		int initial = 3;
+		for(int a = 0; a < A.length; a++) {
+			if (a % 2 == 0) {
+				A[a] = 9;
+			} else {
+				if (a == initial) {
+					initial += initial + 1;
+				}
+				
+				A[a] = initial;
+			}
+		}
+		
+		return initial;
+	}
+
+}

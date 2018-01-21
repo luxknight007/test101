@@ -1,0 +1,16 @@
+package test;
+
+public class OddOccurrencesInArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.err.println(oddOccurance(new int[8]));
+	}
+	
+	public static int oddOccurance (int[] A) {
+		for(int a = 0; a < A.length; a++) {
+			
+		}
+	}
+
+}
